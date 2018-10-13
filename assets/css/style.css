@@ -90,7 +90,6 @@ body {
     color: white;
     font-size: 10pt;
     border-top: 8px solid #4aaaa5;
-    position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
@@ -136,8 +135,8 @@ h2.aboutme {
 }
 
 img {
-    height: 200px;
-    width: 200px;
+    height: auto;
+    width: 20%;
     float: left;
     padding: 20px;
 }
@@ -146,14 +145,42 @@ h3 {
     font-family: 'Helvetica';
 }
 
+/*MEDIA QUERIES*/
+
 @media only screen and (max-width: 600px) {
     header {
         position: static;
     }
+    aside.aboutme {
+        width: 95%;
+        height: 30%;
+    }
 }
 
 @media only screen and (max-width: 768px) {
-
+    h1.header {
+        margin-left: 10px;
+    }
+    aside.aboutme {
+        width: 95%;
+        height: 20%;
+    }
+    img {
+        width:40%;
+        height: auto;
+    }
+    hr {
+        width: 95%;
+    }
+    #about {
+        margin-left: 300px;
+    }
+    #portfolio {
+        
+    }
+    #contact {
+        margin-left: 450px;
+    }
 }
 
 @media only screen and (max-width: 980px) {
